@@ -1,0 +1,17 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#14B8A6",
+    "titleBar.inactiveBackground": "#0F766E",
+
+    "titleBar.activeForeground": "#F0FDFA",
+    "titleBar.inactiveForeground": "#1F241C"
+  },
+  "files.exclude": {
+    "**/ACKNOWLEDGEMENTS.md": true,
+    "**/CHANGELOG.md": true,
+    "**/CODE_OF_CONDUCT.md": true,
+    "**/CONTRIBUTING.md": true,
+    "**/LICENSE.md": true,
+    "**/SECURITY.md": true
+  }
+}
