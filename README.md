@@ -2,7 +2,7 @@
 
 ## Description
 
-This project explores how a Tabular Foundation Model can be used on classic supervised learning tasks. It contains two notebook-based experiments: one for classification and one for regression.
+This project explores how a [Tabular Foundation Model](https://github.com/soda-inria/tabicl) can be used on classic supervised learning tasks. It contains two notebook-based experiments: one for classification and one for regression.
 
 ![Capture](/docs/images/Picture.jpg)
 Illustrative photo by <a href="https://unsplash.com/fr/@adrian_trinkaus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adrian Trinkaus</a> on <a href="https://unsplash.com/fr/photos/photo-de-toles-ondulees-45GmPkD806w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
