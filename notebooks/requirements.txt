@@ -1,6 +1,0 @@
-kagglehub
-numpy
-pandas
-scikit-learn
-tabicl
-xgboost
