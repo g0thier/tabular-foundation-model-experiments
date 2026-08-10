@@ -2,7 +2,7 @@
 
 ## Description
 
-This project explores how a [Tabular Foundation Model](https://github.com/soda-inria/tabicl) can be used on classic supervised learning tasks. It contains two notebook-based experiments: one for classification and one for regression.
+This project explores how a [Tabular Foundation Model](https://github.com/soda-inria/tabicl) can be used on classic supervised learning tasks and forecasting. It contains three notebook-based experiments: one for classification, one for regression, and one for time series forecasting.
 
 ![Capture](/docs/images/Picture.jpg)
 
@@ -29,10 +29,11 @@ Illustrative photo by <a href="https://unsplash.com/fr/@adrian_trinkaus?utm_sour
 
 ## 🎯 Objective of the project
 
-The goal is to test a Tabular Foundation Model on two common tabular machine learning settings:
+The goal is to test a Tabular Foundation Model on common tabular machine learning settings:
 
 - Classification, where the model predicts a discrete target class.
 - Regression, where the model predicts a continuous numerical target.
+- Forecasting, where the model predicts future values from time series data.
 
 The notebooks are intended to make the workflow easy to inspect, reproduce, and adapt for further experiments.
 
@@ -50,6 +51,7 @@ tabular-foundation-model-experiments/
 │   └── images/
 ├── notebooks/
 │   ├── classification_TFM.ipynb
+│   ├── forecasting_TFM.ipynb
 │   └── regression_TFM.ipynb
 ├── ACKNOWLEDGEMENTS.md
 ├── CHANGELOG.md
@@ -81,15 +83,17 @@ pip install -r requirements.txt
 
 ## 🐍 Notebooks
 
-The `notebooks/` directory contains two Tabular Foundation Model experiments:
+The `notebooks/` directory contains three Tabular Foundation Model experiments:
 
 - `classification_TFM.ipynb`: uses a KaggleHub-loaded Titanic dataset to test TabICL on a classification task and evaluate categorical label predictions from tabular features.
+- `forecasting_TFM.ipynb`: uses a KaggleHub-loaded Air Passengers dataset to test TabICL on a time series forecasting task and compare its predictions with SARIMAX and Prophet baselines.
 - `regression_TFM.ipynb`: tests TabICL on a regression task and evaluates continuous value predictions from tabular features.
 
-Both notebooks compare TabICL with Random Forest and XGBoost baselines:
+The notebooks include baseline comparisons adapted to each task:
 
 - Classification metrics: accuracy, precision, recall, and F1 score.
 - Regression metrics: MSE, RMSE, MAE, and R².
+- Forecasting metrics: MAE, RMSE, and SMAPE.
 
 These comparisons are compact experiment baselines, not exhaustive benchmarks.
 
